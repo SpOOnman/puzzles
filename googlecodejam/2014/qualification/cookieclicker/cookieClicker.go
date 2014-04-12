@@ -14,7 +14,8 @@ const Debug = false
 //https://code.google.com/codejam/contest/351101/dashboard#s=p0
 func main() {
     log("https://code.google.com/codejam/contest/351101/dashboard#s=p0")
-    input, err := readFlatInput("/home/tkl/dev/puzzles/googlecodejam/2014/qualification/cookieclicker/sample.in")
+//    input, err := readFlatInput("/home/tkl/dev/puzzles/googlecodejam/2014/qualification/cookieclicker/sample.in")
+    input, err := readFlatInput("/home/tkl/dev/puzzles/googlecodejam/2014/qualification/cookieclicker/B-small-attempt0.in")
     if (err != nil) {
         log("Error %v", err)
         os.Exit(1)
