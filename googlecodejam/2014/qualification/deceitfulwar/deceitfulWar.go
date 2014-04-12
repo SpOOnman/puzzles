@@ -16,7 +16,8 @@ const Debug = false
 func main() {
     log("https://code.google.com/codejam/contest/351101/dashboard#s=p0")
 //    input, err := readFlatInput("/home/tkl/dev/puzzles/googlecodejam/2014/qualification/deceitfulwar/sample.in")
-    input, err := readFlatInput("/home/tkl/dev/puzzles/googlecodejam/2014/qualification/deceitfulwar/D-small-attempt0.in")
+//    input, err := readFlatInput("/home/tkl/dev/puzzles/googlecodejam/2014/qualification/deceitfulwar/D-small-attempt0.in")
+    input, err := readFlatInput("/home/tkl/dev/puzzles/googlecodejam/2014/qualification/deceitfulwar/D-large.in")
     if (err != nil) {
         log("Error %v", err)
         os.Exit(1)
