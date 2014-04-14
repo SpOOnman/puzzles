@@ -11,9 +11,9 @@ import (
 )
 
 const (
-	InputFilename       = "A-small-attempt0"
-	ProblemURL          = "https://code.google.com/codejam/contest/2974486/dashboard#s=p0"
-	CaseInputLinesCount = 10
+	InputFilename       = "sample"
+	ProblemURL          = "https://code.google.com/codejam/contest/2974486/dashboard#s=p2"
+	CaseInputLinesCount = 1
 
 	InputFilenameExtension = ".in"
 	OutputFileExtension    = ".out"
@@ -25,35 +25,13 @@ var (
 )
 
 
+
+
 func solveCase(index int, input [][]float64) {
-    log("Solving case %v, with data %v", index, input)
-
-	firstAnswer := int(input[0][0])
-	firstRow := input[firstAnswer]
-	secondAnswer := int(input[5][0])
-	secondRow := input[5 + secondAnswer]
-
-	log("First answer is %v row: %v, second answer is %v row: %v", firstAnswer, firstRow, secondAnswer, secondRow)
-	candidates := make([]float64, 0)
-
-	for _, left := range firstRow {
-		for _, right := range secondRow {
-			if (left == right) {
-				log("Found candidate: %v", left)
-				candidates = append(candidates, left)
-			}
-		}
-	}
-
-	switch {
-	case len(candidates) == 0:
-		out("Case #%v: Volunteer cheated!", index + 1)
-	case len(candidates) == 1:
-		out("Case #%v: %v", index + 1, candidates[0])
-	case len(candidates) > 1:
-		out("Case #%v: Bad magician!", index + 1)
-	}
+	out("Case #%v: %v", index+1, input)
 }
+
+
 
 
 
